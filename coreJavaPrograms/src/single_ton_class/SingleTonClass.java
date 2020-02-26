@@ -25,7 +25,6 @@ public class SingleTonClass {
 		
 		SingleTonClass x = (SingleTonClass) SingleTonClass.getInstance();
 		SingleTonClass y = (SingleTonClass) SingleTonClass.getInstance();
-		x.check = 10;
-		System.out.println(y.check);
+		System.out.println("..."+y.check);
 	}
 }
