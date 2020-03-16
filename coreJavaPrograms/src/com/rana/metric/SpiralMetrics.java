@@ -4,8 +4,8 @@ public class SpiralMetrics {
 
 	public static void main(String[] args) {
 		
-		int[][] arr = new int[][] {{1,2,3,4},{1,2,3,4},{1,2,3,4},{1,2,3,4}};
-		spiralPrint(arr, 4, 4);
+		int[][] arr = new int[][] {{1,2,3,4},{1,2,3,4}};
+		spiralPrint(arr, 2, 4);
 	}
 	
 	public static void spiralPrint(int[][] arr, int row, int col) {
@@ -13,7 +13,7 @@ public class SpiralMetrics {
 	   int lowrow =-1, highrow = row, lowcol = -1, highcol = col;
 	   int currentCol = 0;
 	   int currentRow = 0;
-	   while(lowrow < highrow && lowcol < highcol) {
+	   while(lowrow+1 < highrow && lowcol+1 < highcol) {
 		   
 	   while(currentCol <highcol) {
 		   System.out.print(" "+arr[currentRow][currentCol]);
